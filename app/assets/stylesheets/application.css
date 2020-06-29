@@ -30,7 +30,7 @@
 
 .card{
 	margin: 0px 10px;
-	transition: transform .2s;
+	transition: transform .4s;
 }
 
 .card:hover{
