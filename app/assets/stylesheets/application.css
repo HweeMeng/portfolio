@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ #holder{
+ 	margin: 2 auto;
+ }
+
+ .link{
+ 	color:green;
+ 	transition: 0.6s;
+ }
+
+ a.link:hover{
+ 	color:red;
+
+ }
