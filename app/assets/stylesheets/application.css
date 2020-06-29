@@ -15,7 +15,7 @@
  */
 
  #holder{
- 	margin: 2 auto;
+ 	margin: 2;
  }
 
  .link{
@@ -27,3 +27,7 @@
  	color:red;
 
  }
+
+.card{
+	margin: 0px 10px;
+}
