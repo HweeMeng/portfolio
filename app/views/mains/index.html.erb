@@ -2,13 +2,19 @@
 <div class="container">
 	<div id="holder row">
 		<div class="d-flex justify-content-center">
-			<h2>Good afternoon!</h2>
+			<% if @time.hour < 12 %>
+			<h2>Good Morning!</h2>
+			<% elsif @time.hour >=12 && @time.hour <= 17  %>
+			<h2>Good Afternoon!</h2>
+			<%else%>
+			<h2>Good Evening!</h2>
+			<% end %>
 		</div>
 		<div class="d-flex justify-content-center">
 			<p>This is Hwee Meng's Portfolio page</p>
 		</div>
 		<br/>
-		<div class="row">
+		<div class="row boxer">
 		  <div class="col-3">
 		    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 		      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">About me</a>
@@ -19,8 +25,13 @@
 		  <div class="col-9">
 		    <div class="tab-content" id="v-pills-tabContent">
 		      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+		      	<div class = "row">
 
-		      	<p>Hi!, i'm a Software engineer with a online banking customer service background. I understand how users will feel and use the sites and I strive to develop and maintain sites that are user friendly and helpful to the users.</p>
+		      		<img src="<%= asset_path( 'thumbnail.png' ) %>" class="thumbnail" alt="...">
+
+			      	<p class = "col">Hi! I'm a Software engineer with a online banking customer service background. I understand how users will feel and use the sites and I strive to develop and maintain sites that are user friendly and helpful to the users.</p>
+
+		      	</div>
 
 		      </div>
 		      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -58,7 +69,7 @@
 		      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 
 		      	<p>
-		      		You can reach me via the below: <br/>
+		      		You can reach me via the below: <br/><br/>
 		      		Email: lek.hweemeng@live.com<br/>
 		      		Linkedin: <a href='https://www.linkedin.com/in/hwee-meng-lek-149b591ab/'> Click me!</a>
 		      	</p>

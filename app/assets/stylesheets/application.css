@@ -36,3 +36,7 @@
 .card:hover{
 transform: scale(1.1);
 }
+
+.thumbnail{
+	width: 200px;
+}
