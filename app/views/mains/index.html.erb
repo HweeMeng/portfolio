@@ -7,33 +7,65 @@
 		<div class="d-flex justify-content-center">
 			<p>This is Hwee Meng's Portfolio page</p>
 		</div>
-		<div class="row d-flex justify-content-center">
-			<div class="card rounded" style="width: 20rem;">
-			  <img src="<%= asset_path( 'project1.png' ) %>" class="card-img-top" alt="...">
-			  <div class="card-body">
-			    <h5 class="card-title">Game Project</h5>
-			    <p class="card-text">This is a turn-based game project is built with only Javascript and DOM manipulation. </p>
-			    <a href="https://hweemeng.github.io/project-1/" class="btn btn-primary">To the dungeon!</a>
-			  </div>
-			</div>
+		<br/>
+		<div class="row">
+		  <div class="col-3">
+		    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">About me</a>
+		      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Portfolios</a>
+		      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Contact</a>
+		    </div>
+		  </div>
+		  <div class="col-9">
+		    <div class="tab-content" id="v-pills-tabContent">
+		      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
-			<div class="card rounded" style="width: 20rem;">
-			  <img src="<%= asset_path( 'goldfishtrainerds.png' ) %>" class="card-img-top" alt="...">
-			  <div class="card-body">
-			    <h5 class="card-title">Goldfish Trainerds</h5>
-			    <p class="card-text">This is a group project built with Ruby on Rails, with Materialize. Social media for Goldfish enthusiasts</p>
-			    <a href="https://goldfish-trainerds.herokuapp.com/" class="btn btn-primary">To Goldfish Trainerds!</a>
-			  </div>
-			</div>
+		      	<p>Hi!, i'm a Software engineer with a online banking customer service background. I understand how users will feel and use the sites and I strive to develop and maintain sites that are user friendly and helpful to the users.</p>
 
-			<div class="card rounded" style="width: 20rem;">
-			  <img src="<%= asset_path( 'travinary.png' ) %>" class="card-img-top" alt="...">
-			  <div class="card-body">
-			    <h5 class="card-title">Travinary</h5>
-			    <p class="card-text">This project is build with Ruby on Rails back end, React.js as front end with Material-UI.</p>
-			    <a href="https://travinary.herokuapp.com/" class="btn btn-primary">To Travinary!</a>
-			  </div>
-			</div>
+		      </div>
+		      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+		      	<div class="row d-flex justify-content-center">
+		      		<div class="card rounded" style="width: 15rem;">
+		      		  <img src="<%= asset_path( 'project1.png' ) %>" class="card-img-top" alt="...">
+		      		  <div class="card-body">
+		      		    <h5 class="card-title">Game Project</h5>
+		      		    <p class="card-text">This is a turn-based game project is built with only Javascript and DOM manipulation. </p>
+		      		    <a href="https://hweemeng.github.io/project-1/" class="btn btn-primary">To the dungeon!</a>
+		      		  </div>
+		      		</div>
+
+		      		<div class="card rounded" style="width: 15rem;">
+		      		  <img src="<%= asset_path( 'goldfishtrainerds.png' ) %>" class="card-img-top" alt="...">
+		      		  <div class="card-body">
+		      		    <h5 class="card-title">Goldfish Trainerds</h5>
+		      		    <p class="card-text">This is a group project built with Ruby on Rails, with Materialize. Social media for Goldfish enthusiasts</p>
+		      		    <a href="https://goldfish-trainerds.herokuapp.com/" class="btn btn-primary">To Goldfish Trainerds!</a>
+		      		  </div>
+		      		</div>
+
+		      		<div class="card rounded" style="width: 15rem;">
+		      		  <img src="<%= asset_path( 'travinary.png' ) %>" class="card-img-top" alt="...">
+		      		  <div class="card-body">
+		      		    <h5 class="card-title">Travinary</h5>
+		      		    <p class="card-text">This project is build with Ruby on Rails back end, React.js as front end with Material-UI.</p>
+		      		    <a href="https://travinary.herokuapp.com/" class="btn btn-primary">To Travinary!</a>
+		      		  </div>
+		      		</div>
+		      	</div>
+
+		      </div>
+		      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+		      	<p>
+		      		You can reach me via the below: <br/>
+		      		Email: xxxx@email.com<br/>
+		      		Linkedin: <a href='https://www.linkedin.com/in/hwee-meng-lek-149b591ab/'> Click me!</a>
+		      	</p>
+
+		      </div>
+		    </div>
+		  </div>
 		</div>
 	</div>
 </div>
